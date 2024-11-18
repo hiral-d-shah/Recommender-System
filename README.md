@@ -1,2 +1,16 @@
-# Recommender System 
-We will create a recommender system for your e-commerce site, built on WordPress WooCommerce. Using your order history, the system will offer personalized product suggestions. With 40 products and over 10,000 orders, this system will enhance customer experience and boost sales by tailoring recommendations to individual preferences.
+# Recommender System
+This repository contains a personalized recommender system designed for WordPress WooCommerce e-commerce sites. By leveraging customer order history, the system generates tailored product recommendations to enhance user experience and boost sales. It is optimized for datasets with 40+ products and 10,000+ orders, using collaborative filtering to align suggestions with individual customer preferences.
+
+## File Structure
+
+### `Data Fetch.ipynb`
+This notebook handles data extraction from MySQL databases, exporting the data as CSV files for preprocessing.
+
+### `Data Cleaning Visualization Feature Engineering.ipynb`
+Responsible for cleaning the raw data, creating visualizations, and engineering features required for training the recommendation model.
+
+### `Collaborative Filtering Based Model.ipynb`
+Contains the implementation of the collaborative filtering recommendation algorithm.
+
+### `Main.py`
+A FastAPI-based live API that serves recommendations. It takes a user ID and the number of desired recommendations as input and returns a list of recommended product IDs.
