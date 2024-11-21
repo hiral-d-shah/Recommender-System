@@ -98,7 +98,6 @@ def recommend(request: RecommendationRequest):
         product_indices = product_bought.index.tolist()
         user_recommendations = recommend_for_user(product_indices, knn, product_vectors, products, n_recommendations)
         filtered_recommendations = user_recommendations[(user_recommendations['Stock Status'] == 1) & (user_recommendations['Status'] == 'publish')][:n_recommendations]
-        print(base_product_ids)
         recommendations = filtered_recommendations[['Product ID', 'Name', 'Similarity']].to_dict(orient="records")
         return recommendations
     except Exception as e:
