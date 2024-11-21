@@ -15,8 +15,8 @@ Contains the implementation of the collaborative filtering recommendation algori
 ### `Collab.py`
 A FastAPI-based live API that serves recommendations. It takes a user ID and the number of desired recommendations as input and returns a list of recommended product IDs.
 
-### Content Based Model.ipynb
+### `Content Based Model.ipynb`
 This notebook implements a content-based recommendation approach, using product metadata (Name, Description, Category, Price, etc) to suggest products similar to those previously interacted with by the user.
 
-### Content.py
+### `Content.py`
 A FastAPI-based live API that serves content-based recommendations using K-Nearest Neighbors (KNN) and Word2Vec embeddings. It takes a user ID, product IDs, and the number of desired recommendations as input and returns a list of recommended product IDs.
