@@ -20,3 +20,11 @@ This notebook implements a content-based recommendation approach, using product 
 
 ### `Content.py`
 A FastAPI-based live API that serves content-based recommendations using K-Nearest Neighbors (KNN) and Word2Vec embeddings. It takes a user ID, product IDs, and the number of desired recommendations as input and returns a list of recommended product IDs.
+
+### `Hybrid.py`
+A FastAPI-based live API combining collaborative filtering and content-based recommendations for a hybrid approach.
+It provides:
+- Personalized Recommendations: Merges content-based and collaborative filtering outputs to deliver tailored suggestions.
+- Best Sellers: Recommends top-performing products based on purchase frequency.
+- Related Products: Suggests products similar to a specified product ID using content-based techniques.
+- Frequently Bought Together: Identifies products often purchased together with a specified product ID using collaborative filtering and SVD latent factors.
